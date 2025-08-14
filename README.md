@@ -28,7 +28,7 @@ portfolio/
 ```bash
 git clone https://github.com/yourusername/portfolio.git
 
-2️⃣ Open in Browser
+**###** 2️⃣ Open in Browser
 
 Simply double-click index.html to view the portfolio in your browser.
 🎨 Technologies Used
