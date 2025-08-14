@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hana Saeed - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: #F8F9FA;
+            color: #333;
+            display: flex;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            width: 25%;
+            background: #fff;
+            padding: 20px;
+            border-right: 2px solid #EAECEE;
+            text-align: center;
+        }
+        .profile-pic {
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #F1C40F;
+            box-shadow: 0 0 15px rgba(241, 196, 15, 0.4);
+            margin-bottom: 15px;
+        }
+        .sidebar h2 {
+            font-size: 1.4em;
+            font-weight: 600;
+            color: #2C3E50;
+            margin-bottom: 5px;
+        }
+        .sidebar p {
+            font-size: 0.9em;
+            color: gray;
+            margin-bottom: 15px;
+        }
+        .info { text-align: left; margin-bottom: 20px; }
+        .info h4 {
+            font-size: 0.9em;
+            color: #2C3E50;
+            margin-top: 10px;
+        }
+        .bar {
+            height: 8px;
+            background: #ECF0F1;
+            border-radius: 5px;
+            margin: 5px 0 15px;
+            overflow: hidden;
+        }
+        .bar span {
+            display: block;
+            height: 100%;
+            background: linear-gradient(90deg, #F1C40F, #D4AC0D);
+            border-radius: 5px;
+        }
+
+        /* Main Content */
+        .main {
+            width: 75%;
+            padding: 20px;
+        }
+        .intro {
+            background: #fff;
+            padding: 30px;
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 5px 15px rgba(44, 62, 80, 0.1);
+        }
+        .intro-text h1 {
+            font-size: 2em;
+            font-weight: 600;
+            color: #2C3E50;
+        }
+        .intro-text h1 span { color: #F1C40F; }
+        .intro-text p {
+            margin: 10px 0;
+            font-size: 0.95em;
+            color: #555;
+        }
+        .btn {
+            display: inline-block;
+            background: linear-gradient(90deg, #F1C40F, #D4AC0D);
+            padding: 10px 20px;
+            border-radius: 30px;
+            color: #fff;
+            font-weight: 600;
+            text-decoration: none;
+            transition: 0.3s;
+            box-shadow: 0 4px 10px rgba(241, 196, 15, 0.3);
+        }
+        .btn:hover { transform: scale(1.05); }
+
+        /* Section Titles */
+        .section-title {
+            font-size: 1.5em;
+            font-weight: 600;
+            text-align: center;
+            margin: 30px 0 20px;
+            color: #2C3E50;
+        }
+
+        /* Services */
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+        .service-card {
+            background: #fff;
+            padding: 20px;
+            text-align: center;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(44, 62, 80, 0.1);
+            transition: transform 0.3s;
+        }
+        .service-card:hover { transform: translateY(-5px); }
+        .service-card i {
+            font-size: 2em;
+            color: #F1C40F;
+            margin-bottom: 10px;
+        }
+
+        /* Projects */
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .project-card {
+            background: #fff;
+            padding: 20px;
+            border-radius: 15px;
+            transition: transform 0.3s;
+            box-shadow: 0 4px 10px rgba(44, 62, 80, 0.1);
+        }
+        .project-card:hover { transform: translateY(-5px); }
+        .project-card h3 {
+            color: #F1C40F;
+            margin-bottom: 10px;
+        }
+        .project-card p {
+            font-size: 0.9em;
+            color: #555;
+        }
+        .project-card a {
+            display: inline-block;
+            margin-top: 10px;
+            font-weight: bold;
+            color: #2C3E50;
+            text-decoration: none;
+        }
+
+        /* Responsive */
+        @media (max-width: 900px) {
+            body { flex-direction: column; }
+            .sidebar, .main { width: 100%; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <img src="photo.jpg" alt="Hana Saeed" class="profile-pic">
+        <h2>Hana Saeed</h2>
+        <p>BCA Student | AI & Web Developer</p>
+
+        <div class="info">
+            <h4>Email</h4>
+            <p>hanasaeed06.08@gmail.com</p>
+            <h4>Location</h4>
+            <p>Hyderabad, India</p>
+            <h4>Languages</h4>
+            <p>English</p>
+            <div class="bar"><span style="width:100%"></span></div>
+            <p>Hindi</p>
+            <div class="bar"><span style="width:90%"></span></div>
+        </div>
+
+        <div class="info">
+            <h4>Skills</h4>
+            <p>Python</p>
+            <div class="bar"><span style="width:100%"></span></div>
+            <p>HTML/CSS/JS</p>
+            <div class="bar"><span style="width:95%"></span></div>
+            <p>AI/ML</p>
+            <div class="bar"><span style="width:85%"></span></div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main">
+        <!-- Intro -->
+        <div class="intro">
+            <div class="intro-text">
+                <h1>I'm <span>Hana Saeed</span></h1>
+                <p>Passionate about AI, web development, and creating solutions that make life easier. I love combining creativity with technology to build impactful projects.</p>
+                <a href="mailto:hanasaeed06.08@gmail.com" class="btn">Hire Me</a>
+            </div>
+        </div>
+
+        <!-- Services -->
+        <h2 class="section-title">My Services</h2>
+        <div class="services">
+            <div class="service-card"><i class="fas fa-code"></i>Web Development</div>
+            <div class="service-card"><i class="fas fa-pencil-ruler"></i>UI/UX Design</div>
+            <div class="service-card"><i class="fas fa-robot"></i>Machine Learning</div>
+            <div class="service-card"><i class="fas fa-brain"></i>AI App Development</div>
+        </div>
+
+        <!-- Projects -->
+        <h2 class="section-title">Projects</h2>
+        <div class="projects">
+            <div class="project-card">
+                <h3>AI Brain Tumor Detection</h3>
+                <p>Deep learning-based MRI classification and tumor size estimation.</p>
+                <a href="https://drive.google.com/file/d/1WakPxuqYstFmEtZ4MJbwLq48jmEZ2klU/view">View Project</a>
+            </div>
+            <div class="project-card">
+                <h3>Smart Parking System</h3>
+                <p>Real-time parking availability tracking using sensors and maps.</p>
+                <a href="https://github.com/hanasaeed06/SmartParkingsystem.git">Check Project</a>
+            </div>
+            <div class="project-card">
+                <h3>Employee Salary Prediction</h3>
+                <p>Predicts salaries based on multiple job-related factors.</p>
+                <a href="https://github.com/hanasaeed06/Employee-Salary-Prediction.git">More Details</a>
+            </div>
+            <div class="project-card">
+                <h3>Recipe Finder</h3>
+                <p>Suggests recipes based on available ingredients to reduce waste.</p>
+                <a href="https://github.com/hanasaeed06/Recipefinder.git">Try Now</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
